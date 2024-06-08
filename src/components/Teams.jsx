@@ -31,7 +31,9 @@ const Teams = () => {
         <div className="border-b border-gray-400 w-96" />
       </div>
       {isLoading ? (
-        <p>Loading...</p>
+        <div className="flex justify-center">
+          <span className="loading loading-spinner loading-lg"></span>
+        </div>
       ) : (
         <div className="grid md:grid-cols-4 gap-4 mb-3 place-items-center">
           {data.map((item, id) => (
