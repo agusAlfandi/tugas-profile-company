@@ -13,10 +13,8 @@ const Main = () => {
         </div>
 
         <div className="flex-1 flex items-center px-5 pt-5">
-          <p className="text-3xl leading-normal">
-            <span className="text-5xl text-green-500 font-bold text-justify">
-              TECH.
-            </span>
+          <p className="text-3xl leading-normal text-justify">
+            <span className="text-5xl text-green-500 font-bold">TECH.</span>
             adalah sebuah Toko komputer yang bertujuan memberikan pelayanan
             terbaik dan barang terbaik sesuai keinginan pelanggan dengan garansi
             100% internasional.
