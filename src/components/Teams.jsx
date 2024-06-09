@@ -1,11 +1,12 @@
 import TeamsList from "../teams/TeamsList";
-import { useEffect, useState } from "react";
-
+import { useContext, useEffect, useState } from "react";
+import { MyContext } from "../useContext/context";
 const Skills = ["Leader teknisi", "Teknisi", "Manager", "Admin", "Supervisor"];
 
 const Teams = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const { setUser } = useContext(MyContext);
 
   useEffect(() => {
     async function getDataUser() {
@@ -13,6 +14,7 @@ const Teams = () => {
         const res = await fetch("https://randomuser.me/api/?results=12");
         const response = await res.json();
         setData(response.results);
+        setUser(response.results);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -21,7 +23,7 @@ const Teams = () => {
     }
 
     getDataUser();
-  }, []);
+  }, [setUser]);
 
   return (
     <div className="pt-5">

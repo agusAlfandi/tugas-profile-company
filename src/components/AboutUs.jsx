@@ -1,6 +1,17 @@
+import { useContext } from "react";
 import Karyawan from "../karyawan/Karyawan";
+import { MyContext } from "../useContext/context";
+const Skills = [
+  "Sudah berkecumpung dalam bisnis teknologi menanagement sebuah perusahaan atau startup",
+  "Sudah lama menjadi Leader teknisi",
+  "Menjadi Asisten teknisi",
+  "Front Office",
+  "Teknisi leptop dan komputer",
+];
 
 const AboutUs = () => {
+  const { user } = useContext(MyContext);
+
   return (
     <div className="pt-28">
       <div className="flex items-center justify-around pb-28 h-10">
@@ -25,29 +36,22 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="collapse-content">
-          <div className="grid md:grid-cols-3 place-items-center">
-            <Karyawan
-              nama="Bp. Supeno S.Kom"
-              pengalaman="Sudah berkecumpung dalam bisnis teknologi memanagement sebuah
-          perusahaan atau startup"
-            />
-            <Karyawan
-              nama="Andika Wahyu"
-              pengalaman="Sudah lama menjadi Leader teknisi"
-            />
-            <Karyawan
-              nama="Dika Rahwanto"
-              pengalaman="Menjadi Asisten teknisi"
-            />
-            <Karyawan nama="Yusuf" pengalaman="Teknisi leptop dan komputer" />
-            <Karyawan
-              nama="Gemilang"
-              pengalaman="Teknisi leptop dan komputer"
-            />
-            <Karyawan nama="Dono" pengalaman="Teknisi leptop dan komputer" />
-            <Karyawan nama="Milea" pengalaman="Front Office" />
-            <Karyawan nama="Dilan" pengalaman="Front Office" />
-          </div>
+          {user === null ? (
+            <div className="flex justify-center">
+              <span className="loading loading-spinner loading-lg"></span>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-4 place-items-center">
+              {user?.map((item, id) => (
+                <Karyawan
+                  key={id}
+                  pic={item.picture.large}
+                  name={item.name.title + " " + item.name.first}
+                  skill={Skills[Math.floor(Math.random() * Skills.length)]}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>
