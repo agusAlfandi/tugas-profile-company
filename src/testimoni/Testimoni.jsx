@@ -11,12 +11,12 @@ const Testimoni = () => {
         </div>
         <div className="chat-header">
           Agus Alfandi
-          <time className="text-xs opacity-50">12:45</time>
+          <time className="text-xs">12:45</time>
         </div>
         <div className="chat-bubble">
           Gimana Leptopnya kemaren yang dibeli di toko TECH. ?
         </div>
-        <div className="chat-footer opacity-50">Delivered</div>
+        <div className="chat-footer">Delivered</div>
       </div>
       <div className="chat chat-end">
         <div className="chat-image avatar">
@@ -29,7 +29,7 @@ const Testimoni = () => {
         </div>
         <div className="chat-header">
           Linda
-          <time className="text-xs opacity-50">12:46</time>
+          <time className="text-xs">12:46</time>
         </div>
         <div className="chat-bubble">
           Mantab mas buat render sat set sat set 👍 💯
@@ -43,10 +43,10 @@ const Testimoni = () => {
         </div>
         <div className="chat-header">
           Agus Alfandi
-          <time className="text-xs opacity-50">12:47</time>
+          <time className="text-xs">12:47</time>
         </div>
         <div className="chat-bubble">Mantab... 👍</div>
-        <div className="chat-footer opacity-50">Delivered</div>
+        <div className="chat-footer">Delivered</div>
       </div>
 
       <div className="overflow-hidden">
