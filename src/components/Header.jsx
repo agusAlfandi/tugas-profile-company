@@ -18,17 +18,17 @@ const Header = () => {
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-lg">
           <li>
-            <Link to="aboutUs" smooth={true} duration={500}>
+            <Link to="/aboutUs" smooth={true} duration={500}>
               About Us
             </Link>
           </li>
           <li>
-            <Link to="products" smooth={true} duration={500}>
+            <Link to="/products" smooth={true} duration={500}>
               Products
             </Link>
           </li>
           <li>
-            <Link to="teams" smooth={true} duration={500}>
+            <Link to="/teams" smooth={true} duration={500}>
               Teams
             </Link>
           </li>

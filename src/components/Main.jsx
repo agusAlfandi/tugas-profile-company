@@ -24,7 +24,7 @@ const Main = () => {
       {/* Banner */}
 
       {/* About us */}
-      <div id="aboutUs">
+      <div id="/aboutUs">
         <AboutUs />
         <div className="pt-5">
           <p className="text-2xl text-justify">
@@ -37,13 +37,13 @@ const Main = () => {
       {/* About us */}
 
       {/* Products */}
-      <div id="products">
+      <div id="/products">
         <Products />
       </div>
       {/* Products */}
 
       {/* Teams */}
-      <div id="teams">
+      <div id="/teams">
         <Teams />
       </div>
       {/* Teams */}
