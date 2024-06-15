@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Karyawan from "../karyawan/Karyawan";
+import Karyawan from "./karyawan/Karyawan";
 import { MyContext } from "../useContext/context";
 const Skills = [
   "Sudah berkecumpung dalam bisnis teknologi menanagement sebuah perusahaan atau startup",
@@ -13,25 +13,25 @@ const AboutUs = () => {
   const { user } = useContext(MyContext);
 
   return (
-    <div className="pt-28">
-      <div className="flex items-center justify-around pb-28 h-10">
-        <div className="border-b border-gray-400 w-96" />
-        <p className="text-3xl text-green-500">About US</p>
-        <div className="border-b border-gray-400 w-96" />
+    <div className="m-auto flex max-w-5xl flex-col pt-28">
+      <div className="flex h-10 items-center justify-around pb-28">
+        <div className="w-96 border-b border-black" />
+        <p className="text-3xl text-green-500">About Us</p>
+        <div className="w-96 border-b border-black" />
       </div>
-      <p className="text-2xl leading-8 text-justify">
+      <p className="text-justify text-2xl leading-8">
         Tech adalah Toko yang bergerak dibidang penjualan barang elektronik
         apapun yang berkaitan dengan komputer dan leptop, seperti VGA, Prosessor
         dan lain-lain. Kami dari anak muda yang ambisius yang ingin berbisnis
-        mempuyai ide untuk mendirika toko TECH. ini dan berdiri sejak 2022
+        mempunyai ide untuk mendirikan toko TECH. ini dan berdiri sejak 2022
         sampai sekarang sudah mempunyai beberapa karyawan dan para pelanggan
         yang terus percaya akan kualitas kami.
       </p>
       <br />
 
-      <div tabIndex={0} className="collapse bg-base-200">
+      <div tabIndex={0} className="collapse rounded-lg bg-base-content">
         <div className="collapse-title text-xl font-medium">
-          <p className="text-2xl">
+          <p className="text-2xl text-white">
             Beberapa karyawan kami yang sudah bekerja bersama kami:
           </p>
         </div>
@@ -41,7 +41,7 @@ const AboutUs = () => {
               <span className="loading loading-spinner loading-lg"></span>
             </div>
           ) : (
-            <div className="grid md:grid-cols-4 place-items-center">
+            <div className="grid place-items-center gap-12 text-white md:grid-cols-2 lg:grid-cols-3">
               {user?.map((item, id) => (
                 <Karyawan
                   key={id}
@@ -53,6 +53,13 @@ const AboutUs = () => {
             </div>
           )}
         </div>
+      </div>
+      <div className="pt-5">
+        <p className="text-justify text-2xl">
+          Suasana lingkungan kerja sangat kondusif dan setiap seminggu sekali
+          kami mengadakan kajian pada jum&#39;at pagi bagi beragama islam, lalu
+          sebulan sekali liburan
+        </p>
       </div>
     </div>
   );

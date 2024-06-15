@@ -1,8 +1,8 @@
-import ProductsData from "./Products";
+import ProductsData from "./ProductsData";
 
 const ProductListData = () => {
   return (
-    <div className="grid grid-cols-1 divide-y">
+    <div className="grid grid-cols-1 gap-4 divide-y divide-black">
       <ProductsData
         title="Desktop PC"
         data="Koleksi desktop PC kami dilengkapi dengan spesifikasi

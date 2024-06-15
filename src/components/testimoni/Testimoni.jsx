@@ -1,16 +1,17 @@
-import Gue from "../assets/gue.png";
+import Gue from "../../assets/gue.svg";
+import { CS } from "../../assets/page";
 
 const Testimoni = () => {
   return (
     <div className="mt-8">
       <div className="chat chat-start">
-        <div className="chat-image avatar">
+        <div className="avatar chat-image">
           <div className="w-10 rounded-full">
             <img alt="Tailwind CSS chat bubble component" src={Gue} />
           </div>
         </div>
-        <div className="chat-header">
-          Agus Alfandi
+        <div className="chat-header flex items-center gap-4">
+          <p>Agus Alfandi</p>
           <time className="text-xs">12:45</time>
         </div>
         <div className="chat-bubble">
@@ -19,16 +20,13 @@ const Testimoni = () => {
         <div className="chat-footer">Delivered</div>
       </div>
       <div className="chat chat-end">
-        <div className="chat-image avatar">
+        <div className="avatar chat-image">
           <div className="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS chat bubble component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-            />
+            <img alt="Tailwind CSS chat bubble component" src={CS} />
           </div>
         </div>
-        <div className="chat-header">
-          Linda
+        <div className="chat-header flex items-center gap-4">
+          <p>Linda</p>
           <time className="text-xs">12:46</time>
         </div>
         <div className="chat-bubble">
@@ -36,13 +34,13 @@ const Testimoni = () => {
         </div>
       </div>
       <div className="chat chat-start">
-        <div className="chat-image avatar">
+        <div className="avatar chat-image">
           <div className="w-10 rounded-full">
             <img alt="Tailwind CSS chat bubble component" src={Gue} />
           </div>
         </div>
-        <div className="chat-header">
-          Agus Alfandi
+        <div className="chat-header flex items-center gap-4">
+          <p>Agus Alfandi</p>
           <time className="text-xs">12:47</time>
         </div>
         <div className="chat-bubble">Mantab... 👍</div>
@@ -50,7 +48,7 @@ const Testimoni = () => {
       </div>
 
       <div className="overflow-hidden">
-        <p className=" text-2xl text-green-500 whitespace-nowrap overflow-hidden animate-[marquee_30s_linear_infinite]">
+        <p className="animate-[marquee_30s_linear_infinite] overflow-hidden whitespace-nowrap text-2xl text-green-500">
           Anda puas kami senang
         </p>
       </div>
