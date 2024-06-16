@@ -38,12 +38,7 @@ const Header = () => {
 
       {/* menu dropdown */}
       <div className="dropdown">
-        <div
-          tabIndex={0}
-          className="btn btn-ghost lg:hidden"
-          id="combo"
-          aria-label="Aria Name"
-        >
+        <div tabIndex={0} className="btn btn-ghost lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"

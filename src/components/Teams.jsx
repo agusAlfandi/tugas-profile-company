@@ -29,7 +29,12 @@ const Teams = () => {
     <div className="m-auto max-w-5xl pt-5">
       <div className="flex h-10 items-center justify-around pb-28">
         <div className="w-96 border-b border-black" />
-        <p className="text-3xl text-green-500">Teams</p>
+        <p className="text-3xl text-black">
+          <span className="relative inline-block">
+            <span className="absolute left-1 top-5 h-7 w-20 bg-green-200"></span>
+            <span className="relative z-10 px-2 font-semibold">Teams</span>
+          </span>
+        </p>
         <div className="w-96 border-b border-black" />
       </div>
       {isLoading ? (

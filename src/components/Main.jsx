@@ -21,7 +21,12 @@ const Main = () => {
 
         <div className="flex flex-1 items-center px-5 pt-5">
           <p className="text-justify text-3xl leading-normal">
-            <span className="text-5xl font-bold text-green-500">TECH.</span>
+            <span className="relative inline-block">
+              <span className="absolute left-1 top-5 h-7 w-28 bg-green-200"></span>
+              <span className="relative z-10 px-2 text-5xl font-bold">
+                TECH.
+              </span>
+            </span>
             adalah sebuah Toko komputer yang bertujuan memberikan pelayanan
             terbaik dan barang terbaik sesuai keinginan pelanggan dengan garansi
             100% internasional.

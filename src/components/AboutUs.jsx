@@ -16,7 +16,12 @@ const AboutUs = () => {
     <div className="m-auto flex max-w-5xl flex-col pt-28">
       <div className="flex h-10 items-center justify-around pb-28">
         <div className="w-96 border-b border-black" />
-        <p className="text-3xl text-green-500">About Us</p>
+        <p className="text-4xl text-black">
+          <span className="relative inline-block">
+            <span className="absolute left-1 top-5 h-7 w-36 bg-green-200"></span>
+            <span className="relative z-10 px-2 font-semibold">About Us</span>
+          </span>
+        </p>
         <div className="w-96 border-b border-black" />
       </div>
       <p className="text-justify text-2xl leading-8">

@@ -48,8 +48,14 @@ const Testimoni = () => {
       </div>
 
       <div className="overflow-hidden">
-        <p className="animate-[marquee_30s_linear_infinite] overflow-hidden whitespace-nowrap text-2xl text-green-500">
-          Anda puas kami senang
+        <p className="animate-[marquee_30s_linear_infinite] overflow-hidden whitespace-nowrap text-2xl text-black">
+          <span className="relative inline-block">
+            <span className="absolute left-1 top-5 h-7 w-64 bg-green-200"></span>
+            <span className="relative z-10 px-2 font-semibold">
+              {" "}
+              Anda puas kami senang
+            </span>
+          </span>
         </p>
       </div>
     </div>

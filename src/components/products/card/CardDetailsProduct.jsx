@@ -13,8 +13,15 @@ export default function CardDetailsProduct() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <div className="max-h-auto card card-body card-bordered m-4 max-w-5xl bg-base-300">
-        <div className="flex justify-center p-7 text-2xl text-green-500">
-          <h1>Detail Products</h1>
+        <div className="flex justify-center p-7 text-2xl text-black">
+          <h1>
+            <span className="relative inline-block">
+              <span className="absolute left-1 top-4 h-7 w-36 bg-green-300"></span>
+              <span className="relative z-10 px-2 font-semibold">
+                Detail Products
+              </span>
+            </span>
+          </h1>
         </div>
         <div className="m-4 flex max-w-5xl flex-col rounded-lg border border-gray-700 p-7 sm:h-auto sm:flex-col lg:flex-row">
           <div className="flex items-center">

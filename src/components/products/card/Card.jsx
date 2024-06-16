@@ -14,8 +14,11 @@ export default function Card() {
 
   return (
     <div className="m-auto flex max-w-5xl flex-col">
-      <h1 className="flex justify-center py-4 text-2xl text-green-500">
-        {title}
+      <h1 className="flex justify-center py-4 text-2xl text-black">
+        <span className="relative inline-block">
+          <span className="absolute left-1 top-4 h-7 w-24 bg-green-200"></span>
+          <span className="relative z-10 px-2 font-semibold">{title}</span>
+        </span>
       </h1>
       <div className="max-w- grid grid-rows-1 md:grid-cols-3">
         {card.map((items) => {
